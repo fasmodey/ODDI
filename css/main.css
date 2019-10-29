@@ -320,6 +320,14 @@ nav a:hover {
     text-align: center;
 }
 
+.dots {
+    border-radius: 5px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid red;
+    display: inline-block;
+}
+
 
 
 
