@@ -323,15 +323,16 @@ nav a:hover {
 .slider-team img {
 }
 
+
 .dots {
-    border-radius: 50%;
+    border-radius: 100%;
     width: 10px;
     height: 10px;
     border: 2px solid #fff;
     display: inline-block;
 }
 
-.dots .active {
+.active {
     background: #fff;
 }
 
