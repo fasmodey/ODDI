@@ -320,12 +320,19 @@ nav a:hover {
     text-align: center;
 }
 
+.slider-team img {
+}
+
 .dots {
-    border-radius: 5px;
+    border-radius: 50%;
     width: 10px;
     height: 10px;
-    border: 1px solid red;
+    border: 2px solid #fff;
     display: inline-block;
+}
+
+.dots .active {
+    background: #fff;
 }
 
 
