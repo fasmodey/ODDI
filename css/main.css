@@ -1,0 +1,333 @@
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+    background: #f6f8f9;
+    font-family: ProximaNova-Regular, sans-serif;
+    color: #44525e;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.row {
+    margin: 0 -1.25%;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+ul li {
+    display: inline-block;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 72px;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 18px;
+    color: #1cb88b;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.proxima-bold {
+    font-family: ProximaNova-Bold, sans-serif;
+}
+
+.proxima-thin {
+    font-family: ProximaNovaT-Thin, sans-serif;
+    font-size: 14px;
+}
+
+.font-aw {
+    font-size: 36px;
+}
+
+.dark {
+    color: #363636;
+}
+
+.white {
+    color: #fff;
+}
+
+.mountain-color {
+    color: #1cb88b;
+}
+
+.reverse-fa {
+    transform: scale(-1, 1);
+}
+
+/* blocks */
+.block-70 {
+    width: 5.83%;
+    margin: 0 1.25%;
+    float: left;
+}
+
+.block-170 {
+    width: 14.1666%;
+    margin: 0 1.25%;
+    float: left;
+    /* min-height: 150px; */
+}
+
+.block-370 {
+    width: 30.8333%;
+    margin: 0 1.25%;
+    float: left;
+    /* min-height: 180px;   */
+}
+
+.block-370-50 {
+    width: 47.5%;
+    margin: 0 1.25%;
+    float: left;
+    min-height: 150px;  
+}
+
+.block-770 {
+    width: 64.1666%;
+    margin: 0 1.25%;
+    float: left;
+}
+
+.block-870 {
+    width: 72.5%;
+    margin: 0 1.25%;
+    float: left;
+}
+
+.block-1170 {
+    width: 97.5%;
+    margin: 0 1.25%;
+    float: left;
+}
+
+/* heaer */
+.site-header {
+    height: 80px;
+    background: #000;
+}
+
+/* logo */
+.logo {
+    display: inline;
+    padding-top: 23px;
+}
+
+.logo a {
+    font-size: 30px;
+}
+
+.logo a:hover {
+    color: #ba4c07;
+
+}
+
+/* navigation */
+
+nav ul {
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+nav ul li {
+    padding-right: 36px;
+}
+
+nav a:hover {
+    color: #ba4c07;
+}
+/* sign-up */
+.sign-up button {
+    float: right;
+    width: 90px;
+    background: transparent;
+    font-size: 16px;
+    margin-top: 16px;
+    padding: 12px;
+    border: 2px solid #1cb88b;
+    border-radius: 14px;
+    outline: none;
+}
+
+.sign-up button:hover {
+    cursor: pointer;
+    background: #1cb88b;
+    color: #fff;
+}
+
+/* video-content */
+.play-video {
+    min-height: 820px;
+    background: #666;
+    color: #fff;
+}
+
+.wrapper {
+    /* margin-top: 380px; */
+    margin: 380px 0;
+}
+
+.text {
+    margin: 36px 0 0 30px; 
+}
+
+.text span {
+    display: block;
+    font-size: 60px;
+}
+
+.play-video i {
+    float: left;
+    font-size: 150px;
+}
+
+.text {
+    float: left;
+}
+
+/* our-services */
+.our-services {
+    min-height: 360px;
+    background: #1cb88b;
+}
+
+.feature {
+    margin-top: 50px;
+}
+
+.round {
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.feature i {
+    padding-top: 32px;
+    font-size: 36px;
+}
+
+.feature-descr h3 {
+    padding-top: 5px;
+}
+
+/* tools */
+.tools {
+    text-align: center;
+}
+
+.tools-wrap {
+    line-height: 5;
+}
+
+/* our-works */
+.our-works {
+    background: #ebebeb;
+    min-height: 1325px;
+}
+
+.works-nav ul {
+    margin: 0 -10px;
+    padding: 0;
+}
+
+.works-nav a {
+    text-align: center;
+    font-size: 16px;
+    margin: 0 10px;
+    padding: 8px;
+    border: 2px solid #1cb88b;
+    border-radius: 14px;
+}
+
+.works-nav .active {
+    padding: 8px 29px;
+}
+
+.works-nav a {
+    color: #1cb88b;
+}
+.works-nav a:hover {
+    cursor: pointer;
+    background: #1cb88b;
+    color: #fff;
+}
+
+/*  our-works descr*/
+.descr {
+    padding: 60px 0;
+}
+
+
+.our-projects {
+    min-height: 370px;
+    background: #ccc;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.project-descr {
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    background: #fff;
+    padding-bottom: 30px;
+}
+
+.project-descr .proxima-bold {
+    font-size: 18px;
+}
+
+.plus {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/* our-team */
+.our-team {
+    min-height: 350px;
+    background: #666666;
+}
+
+.slider {
+    margin: 55px 218px;
+}
+
+.slider-team {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
