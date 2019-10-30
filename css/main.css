@@ -113,6 +113,12 @@ a {
     /* min-height: 150px; */
 }
 
+.block-170-4 {
+    width: 22.779%;
+    margin: 0 1.25;
+    float: left;
+}
+
 .block-270 {
     width: 22.5%;
     margin: 0 1.25;
@@ -434,6 +440,37 @@ nav a:hover {
     min-height: 840px;
     background: #fff;
 }
+
+/* .round-progress {
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+    border:  10px solid #1cb88b;
+    text-align: center;
+} */
+
+.round-progress span {
+    line-height: 170px;
+}
+
+.our-skills .block-170 {
+    position: relative;
+}
+
+.round-progress {
+    /* Create the circle */
+    width: 170px;
+    height: 170px;
+    border: 10px solid black;
+    border-radius: 50%;
+    /* Halve the circle */
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    /* Rotate the circle */
+    transform: rotate(-45deg);
+  }
 
 
 
