@@ -247,29 +247,27 @@ nav a:hover {
     min-height: 1325px;
 }
 
-.works-nav ul {
-    margin: 0 -10px;
-    padding: 0;
+.works-wrap a {
+    color: #1cb88b;
 }
 
-.works-nav a {
+.works-button {
+    display: inline-block;
+    width: 90px;
     text-align: center;
     font-size: 16px;
-    margin: 0 10px;
-    padding: 8px;
+    margin-right: 10px;
+    padding: 8px 0;
     border: 2px solid #1cb88b;
     border-radius: 14px;
 }
 
-.works-nav .active {
-    padding: 8px 29px;
+.works-button.active {
+    background: #1cb88b;
+    color: #fff;
 }
 
-.works-nav a {
-    color: #1cb88b;
-}
-.works-nav a:hover {
-    cursor: pointer;
+.works-button:hover {
     background: #1cb88b;
     color: #fff;
 }
