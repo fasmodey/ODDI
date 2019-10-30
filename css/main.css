@@ -41,8 +41,8 @@ a {
     font-size: 16px;
     text-decoration: none;
     color: #fff;
-    font-size: 16px;
 }
+
 
 .proxima-bold {
     font-family: ProximaNova-Bold, sans-serif;
@@ -53,8 +53,21 @@ a {
     font-size: 14px;
 }
 
+.font-medium {
+    font-size: 18px;
+}
+
 .font-aw {
     font-size: 36px;
+}
+
+.font-big {
+    font-size: 72px;
+}
+
+.grey-theme {
+    background: #666666;
+    min-height: 350px;
 }
 
 .dark {
@@ -88,6 +101,12 @@ a {
 }
 
 .block-270 {
+    width: 22.5%;
+    margin: 0 1.25;
+    float: left;
+}
+
+.block-270-inside {
     width: 72.97%;
     margin-left: 27.3%;
     float: left;
@@ -377,6 +396,24 @@ nav a:hover {
 
 .social i {
     padding-top: 12px;
+}
+
+.left {
+    text-align: left;
+    padding-top: 38px;
+}
+
+/* our-achieve */
+.achivement {
+    text-align: center;
+}
+
+.achivement p {
+    margin: 0;
+}
+
+.achivement i {
+    padding-top: 86px;
 }
 
 
