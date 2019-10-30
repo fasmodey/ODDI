@@ -87,6 +87,12 @@ a {
     /* min-height: 150px; */
 }
 
+.block-270 {
+    width: 72.97%;
+    margin-left: 27.3%;
+    float: left;
+}
+
 .block-370 {
     width: 30.8333%;
     margin: 0 1.25%;
@@ -273,7 +279,7 @@ nav a:hover {
 }
 
 /*  our-works descr*/
-.descr {
+.portfolio-descr {
     padding: 60px 0;
 }
 
@@ -283,7 +289,6 @@ nav a:hover {
     background: #ccc;
     text-align: center;
     position: relative;
-    overflow: hidden;
     margin-bottom: 30px;
 }
 
@@ -305,7 +310,7 @@ nav a:hover {
 }
 
 /* our-team */
-.our-team {
+.our-team-slider {
     min-height: 350px;
     background: #666666;
 }
@@ -317,10 +322,6 @@ nav a:hover {
 .slider-team {
     text-align: center;
 }
-
-.slider-team img {
-}
-
 
 .dots {
     border-radius: 100%;
@@ -334,10 +335,49 @@ nav a:hover {
     background: #fff;
 }
 
+/* our-team-descr */
+.our-team {
+    background: #fff;
+    min-height: 916px;
+}
 
+.our-team-social {
+    position: relative;
+}
 
+.worker {
+    min-height: 410px;
+    text-align: center;
+    margin-bottom: 30px;
+}
 
+.avatar {
+    float: left;
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+    background: #ccc;
+}
 
+.social-network {
+    position: absolute;
+    margin: 58px 0 0 140px;
+}
+
+.social {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #1cb88b;
+    font-size: 24px;
+    margin-right: 10px;
+    vertical-align: bottom
+}
+
+.social i {
+    padding-top: 12px;
+}
 
 
 
