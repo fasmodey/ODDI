@@ -28,7 +28,6 @@ ul li {
 
 h2 {
     font-size: 72px;
-    text-decoration: underline;
 }
 
 h3 {
@@ -41,6 +40,20 @@ a {
     font-size: 16px;
     text-decoration: none;
     color: #fff;
+}
+
+.section-header-white h2::after {
+    content: "";
+    height: 10px;
+    background: #fff;
+    display: block;
+}
+
+.section-header-dark h2::after {
+    content: "";
+    height: 10px;
+    background: #363636;
+    display: block;
 }
 
 
@@ -416,7 +429,11 @@ nav a:hover {
     padding-top: 85px;
 }
 
-
+/* our-skills */
+.our-skills  {
+    min-height: 840px;
+    background: #fff;
+}
 
 
 
