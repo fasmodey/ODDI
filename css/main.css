@@ -451,6 +451,12 @@ nav a:hover {
 
 .round-progress span {
     line-height: 170px;
+    padding-left: 75px;
+    /* vertical-align: middle; */
+}
+
+.rotate-text {
+    transform: rotate(45deg);
 }
 
 .our-skills .block-170 {
@@ -458,19 +464,47 @@ nav a:hover {
 }
 
 .round-progress {
-    /* Create the circle */
     width: 170px;
     height: 170px;
-    border: 10px solid black;
+    border: 10px solid #1cb88b;
     border-radius: 50%;
+}
+
+.rotate-block-1 {
+    /* Create the circle */
+    
     /* Halve the circle */
-    border-bottom-color: transparent;
+    /* border-bottom-color: transparent;
     border-left-color: transparent;
-    border-right-color: transparent;
+    border-right-color: transparent; */
     border-top-color: transparent;
     /* Rotate the circle */
     transform: rotate(-45deg);
-  }
+}
+
+.rotate-block-2 {
+    /* Create the circle */
+    
+    /* Halve the circle */
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    /* border-right-color: transparent; */
+    border-top-color: transparent;
+    /* Rotate the circle */
+    transform: rotate(-45deg);
+}
+
+.rotate-block-3 {
+    /* Create the circle */
+    
+    /* Halve the circle */
+    /* border-bottom-color: transparent; */
+    border-left-color: transparent;
+    /* border-right-color: transparent; */
+    border-top-color: transparent;
+    /* Rotate the circle */
+    transform: rotate(-45deg);
+}
 
 
 
