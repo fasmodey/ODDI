@@ -441,18 +441,9 @@ nav a:hover {
     background: #fff;
 }
 
-/* .round-progress {
-    width: 170px;
-    height: 170px;
-    border-radius: 100%;
-    border:  10px solid #1cb88b;
-    text-align: center;
-} */
-
 .round-progress span {
     line-height: 170px;
     padding-left: 75px;
-    /* vertical-align: middle; */
 }
 
 .rotate-text {
@@ -468,43 +459,60 @@ nav a:hover {
     height: 170px;
     border: 10px solid #1cb88b;
     border-radius: 50%;
+    transform: rotate(-45deg);
 }
 
 .rotate-block-1 {
-    /* Create the circle */
-    
-    /* Halve the circle */
-    /* border-bottom-color: transparent;
-    border-left-color: transparent;
-    border-right-color: transparent; */
     border-top-color: transparent;
-    /* Rotate the circle */
-    transform: rotate(-45deg);
 }
 
 .rotate-block-2 {
-    /* Create the circle */
-    
-    /* Halve the circle */
     border-bottom-color: transparent;
     border-left-color: transparent;
-    /* border-right-color: transparent; */
     border-top-color: transparent;
-    /* Rotate the circle */
-    transform: rotate(-45deg);
 }
 
 .rotate-block-3 {
-    /* Create the circle */
-    
-    /* Halve the circle */
-    /* border-bottom-color: transparent; */
     border-left-color: transparent;
-    /* border-right-color: transparent; */
     border-top-color: transparent;
-    /* Rotate the circle */
-    transform: rotate(-45deg);
 }
+
+/* aside */
+.our-skills-sidebar li {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ebebeb;
+    border-radius: 6px;
+    padding-left: 20px;
+    margin: 5px 0;
+}
+
+.our-skills-sidebar ul li {
+    text-decoration: none;
+}
+
+.our-skills-sidebar p {
+    display: inline-block;
+}
+
+.our-skills-sidebar .minus, .plus {
+    float: right;
+    margin: 14px;
+    font-size: 14px;
+}
+
+.show-text {
+    display: none;
+}
+
+/* details {
+    outline: none;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+} */
+
 
 
 
