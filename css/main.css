@@ -123,22 +123,13 @@ a {
     width: 14.1666%;
     margin: 0 1.25%;
     float: left;
-    /* min-height: 150px; */
 }
 
 .block-170-4 {
     width: 22.0779%;
     margin: 0 1.25%;
     float: left;
-    /* min-height: 150px; */
 }
-
-
-/* .block-170-4 {
-    width: 22.779%;
-    margin: 0 1.25%;
-    float: left;
-} */
 
 .block-270 {
     width: 22.5%;
@@ -482,14 +473,8 @@ nav a:hover {
     transform: rotate(45deg);
 }
 
-/* .our-skills .block-170 {
-    position: relative;
-} */
-
 .round-progress {
     box-sizing: border-box;
-    /* width: 160px;
-    height: 160px; */
     border: 10px solid #1cb88b;
     border-radius: 50%;
     transform: rotate(-45deg);
@@ -517,7 +502,6 @@ nav a:hover {
     height: 50px;
     border: 1px solid #ebebeb;
     border-radius: 6px;
-    /* padding-left: 20px; */
     margin: 5px 0;
 }
 
@@ -533,10 +517,6 @@ nav a:hover {
 .our-skills-sidebar ul li i, .skills-name {
     padding-left: 20px;
 }
-
-/* .skills-name {
-    padding-left: 20px;
-} */
 
 .our-skills-sidebar p {
     display: inline-block;
@@ -560,8 +540,6 @@ nav a:hover {
 }
 
 /* our-cms */
-
-
 .subscribe-us {
     min-height: 80px;
 }
@@ -591,6 +569,7 @@ nav a:hover {
 .our-cms {
     min-height: 150px;
     background: #7f7f7f;
+    box-sizing: border-box;
 }
 
 .cms-wrap {
@@ -634,7 +613,6 @@ nav a:hover {
     height: 80px;
 }
 
-
 .user-settings i.far, .user-settings i.fas {
     width: 26px;
     height: 26px;
@@ -666,11 +644,6 @@ nav a:hover {
     left: 118px;
     top: 18px;
 }
-
-/* .user-submit span {
-    position: absolute;
-} */
-
 /* footer */
 footer {
     text-align: center;
