@@ -487,8 +487,9 @@ nav a:hover {
 } */
 
 .round-progress {
-    width: 160px;
-    height: 160px;
+    box-sizing: border-box;
+    /* width: 160px;
+    height: 160px; */
     border: 10px solid #1cb88b;
     border-radius: 50%;
     transform: rotate(-45deg);
@@ -510,6 +511,7 @@ nav a:hover {
 }
 
 /* aside */
+
 .our-skills-sidebar li {
     width: 100%;
     height: 50px;
@@ -613,6 +615,61 @@ nav a:hover {
     padding-right: 14px;
 }
 
+.contact-us input, .user-submit {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 18px 16px;
+    border: 2px solid #363636;
+    margin-top: 50px;
+    font-size: 16px;
+    outline: none;
+    color: #363636;
+}
+
+.user-email, .user-message, .user-name {
+    background: inherit;
+}
+
+.user-message {
+    height: 80px;
+}
+
+
+.user-settings i.far, .user-settings i.fas {
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    margin-right: -26px;
+    position: relative;
+    z-index: 1;
+}
+
+.user-settings i.far + input, .user-settings i.fas + input {
+    padding-left: 30px;
+}
+
+.user-submit {
+    height: 80px;
+    border-radius: 8px;
+    background: #fff;
+    border: 2px solid #fff;
+    color: #1cb88b;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+
+.user-submit i {
+    position: absolute;
+    font-size: 36px;
+    left: 118px;
+    top: 18px;
+}
+
+/* .user-submit span {
+    position: absolute;
+} */
 
 /* footer */
 footer {
