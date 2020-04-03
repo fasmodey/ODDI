@@ -191,6 +191,9 @@ a {
 .site-header {
     height: 80px;
     background: #000;
+    position: sticky;
+    top: 0;
+    z-index: 99;
 }
 
 /* logo */
@@ -351,6 +354,10 @@ nav a:hover {
     text-align: center;
     position: relative;
     margin-bottom: 30px;
+    background-image: url("/images/Drakaris.png");
+    background-size: contain;
+    /* background-repeat: no-repeat; */
+
 }
 
 .project-descr {
@@ -378,11 +385,41 @@ nav a:hover {
 
 .slider {
     margin: 55px 218px;
+    /* overflow: hidden;
+    position: relative; */
 }
+
 
 .slider-team {
     text-align: center;
+    width: 770px;
+    float: left;
 }
+
+/* .slider-wrap {
+    width: 9999px;
+}
+
+.slider-lef-arrow, .slider-right-arrow {
+    position: absolute;
+    line-height: 300px;
+    width: 30px;
+    background: rgba(0, 0, 0, .1);
+    text-align: center;
+    cursor: pointer;
+}
+
+.slider-left-arrow {
+    left: 5px;
+}
+
+.slider-right-arrow {
+    right: 15px;
+} */
+
+/* .slide-left {
+    margin-left: -770px;
+} */
 
 .dots {
     border-radius: 100%;
@@ -465,8 +502,8 @@ nav a:hover {
 }
 
 .round-progress span {
-    line-height: 160px;
-    padding-left: 68px;
+    line-height: 155px;
+    padding-left: 65px;
 }
 
 .rotate-text {
@@ -549,10 +586,18 @@ nav a:hover {
     background: inherit;
     outline: none;
     border: 0;
+    border: 3px solid #1cb88b;
+    border-radius: 14px;
+    
 }
 
 #subscribe::placeholder {
     color: #fff;
+}
+
+#subscribe:hover {
+    border: 3px solid lightblue;
+    box-sizing: border-box;
 }
 
 .subscribe-button {
