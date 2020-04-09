@@ -1,0 +1,18 @@
+.heading a {		
+    position:relative;
+}
+
+.heading a:hover {
+    color: red;
+    font-weight: bold;
+    padding-left: 9px;
+}
+
+.heading a:hover::before {
+    content:'>';
+    position:absolute;
+    top:0;
+    left:0;
+    color: red;
+    font-weight: bold;
+}
