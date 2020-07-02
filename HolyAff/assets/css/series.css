@@ -1,0 +1,832 @@
+body {
+    text-align: center;
+}
+
+
+/**************************************  reset START ************************************* */
+
+:focus {
+    outline: 0;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+iframe {
+    border: none;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+/* mobile fixes*/
+
+html.device_mobile input[type="radio"] {
+    min-width: 28px;
+    min-height: 28px;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    border: 0px;
+}
+
+html.device_mobile input[type="checkbox"] {
+    min-width: 28px;
+    min-height: 28px;
+    border: 0px;
+}
+
+
+/* iOS START */
+
+@media (-webkit-min-device-pixel-ratio:0) {
+    html.device_mobile input[type="checkbox"],
+    html.device_mobile input[type="radio"] {
+        border: 1px solid #000;
+    }
+    html.device_mobile [id^=form_] input:not([type='checkbox']):not([type='radio']),
+    html.device_mobile select {
+        -webkit-appearance: none;
+        -webkit-border-radius: 0;
+    }
+}
+
+
+/* iOS END */
+
+
+/**************************************  reset ENDS ************************************* */
+
+
+/************************************* Forms START **************************************/
+
+[id^="form_"] .cell {
+    position: relative;
+}
+
+[id^="form_"] label:not(.button) {
+    color: #999;
+    font-weight: normal;
+    position: absolute;
+    left: 0.9rem;
+    top: 1.4rem;
+    transition: all 0.2s ease;
+}
+
+[id^="form_"] .campaign_wrapper label {
+    position: relative;
+    left: auto;
+    top: auto;
+}
+
+[id^=form_] input:focus~label:not(.button),
+[id^=form_] input.mooli_filled~label:not(.button),
+[id^=form_] input.filled~label:not(.button) {
+    top: .5rem;
+    font-size: 0.75rem;
+}
+
+
+/* Medium and up */
+
+@media screen and (min-width: 40em) {
+    [id^=form_] input[type='checkbox'] {
+        margin: 3px 0.4rem !important;
+    }
+}
+
+[id^=form_] input:not([type='checkbox']):not([type='radio']) {
+    padding: 1rem 0.5rem 0.5rem;
+    border: 0 none;
+    border-bottom: 1px solid #c7d3d7;
+    background-color: transparent;
+    box-shadow: none;
+    box-sizing: border-box;
+    width: 100%;
+    transition: all 0.2s;
+    color: #0a394c;
+}
+
+[id^="form_reg"] input[name=gender]:checked~label {
+    color: #ffffff;
+    background: #14679e;
+}
+
+[id^=form_] input::placeholder,
+[id^=form_] input::-webkit-input-placeholder {
+    color: transparent !important;
+}
+
+[id^=form_] input::-moz-placeholder {
+    color: transparent !important;
+}
+
+[id^=form_] input:-ms-input-placeholder {
+    color: transparent !important;
+}
+
+[id^=form_] input::-ms-input-placeholder {
+    color: transparent !important;
+}
+
+[id^=form_] select {
+    position: relative;
+    color: #0a394c;
+    padding: 10px 10px 10px 0;
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #c7d3d7;
+    height: 2.7rem;
+    box-sizing: border-box;
+}
+
+[id^=form_] select.disabled {
+    background-color: #eee;
+}
+
+[id^=form_] select option {
+    padding: 1em 0.45em;
+}
+
+
+/************************************* Forms END **************************************/
+
+
+/************************************** General START **************************************/
+
+#footer p {
+	font-size: 0.75rem;
+}
+
+
+/************************************** General END **************************************/
+
+
+/************************************** Pregame START **************************************/
+
+#page_pregame .prize_image img {
+    max-width: 320px;
+    width: 100%;
+}
+
+#page_pregame .voucher {
+    cursor: pointer;
+}
+
+#page_pregame .voucher label {
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+#page_pregame .voucher label h4 {
+    background: #002741;
+    background: -moz-linear-gradient(top, #002741 1%, #00365b 74%);
+    background: -webkit-linear-gradient(top, #002741 1%, #00365b 74%);
+    background: linear-gradient(to bottom, #002741 1%, #00365b 74%);
+    height: 100%;
+    color: #fff;
+    padding: 42% 0;
+}
+
+
+/************************************** Pregame END **************************************/
+
+
+/************************************** Registration START **************************************/
+
+[id^=form_reg] .prize_image img {
+    width: 50%;
+}
+
+[id^="form_reg"] #genderbox input {
+    position: absolute;
+    z-index: -1;
+    left: -9999px;
+}
+
+[id^="form_"] #genderbox label.button {
+    margin-bottom: 0.5rem;
+}
+
+[id^="form_reg"] #genderbox label.active {
+    background-color: rgba(23, 121, 186, 0.75);
+    color: #fff;
+}
+
+[id^="form_reg"] #genderbox.mooli_error label {
+    border: 2px solid #c71414;
+}
+
+[id^=form_reg] .formrow_optin {
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+[id^=form_reg] #agb.mooli_error~.optin_text {
+    background-color: #faebeb;
+    padding: 0.5em;
+}
+
+[id^=form_reg] .formrow_tel_info {
+    text-align: right;
+}
+
+[id^=form_reg] .field_note {
+    font-size: 0.75rem;
+}
+
+
+/* Perl Error START */
+
+#perl_error {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    margin: 1.5em 0 1em;
+    border: 2px solid #c71414;
+    background: #faebeb;
+    color: #c71414;
+    z-index: 999;
+    padding: 1em 2.5%;
+    text-align: left;
+    box-sizing: border-box;
+    border-radius: 0.25em;
+}
+
+#perl_error h3 {
+    padding-bottom: 0.5em;
+    font-size: 1.2em;
+}
+
+#perl_error ul {
+    list-style-type: disc;
+    margin: 0 0 0 20px;
+}
+
+
+/* Perl Error END */
+
+
+/* Moolidator START */
+
+[id^=form_] span.status,
+[id^=form_] span.status span {
+    display: none;
+}
+
+[id^=form_] span.mooli_error {
+    display: block;
+    color: #c71414;
+    margin-bottom: 1px;
+    font-size: 0.75rem;
+    text-align: left;
+}
+
+[id^=form_] span.mooli_error.mooli_edit {
+    display: none;
+}
+
+[id^=form_] span.mooli_error span {
+    line-height: 1em;
+    display: block;
+    padding: 0.25em 0.35em;
+}
+
+[id^=form_] input.mooli_error,
+[id^=form_] select.mooli_error {
+    border-bottom: 2px solid #c71414 !important;
+    background-color: #faebeb;
+}
+
+
+/* Moolidator END */
+
+
+/************************************** Registration END **************************************/
+
+
+/************************************** Multicoreg Page ***************************************/
+
+#page_multicoreg label:not(.button) {
+    position: unset;
+}
+
+
+/***************************************  blinking Text START ************************************** */
+
+.blink_text {
+    animation-name: blinker;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+
+/***************************************  blinking Text END ************************************** */
+
+
+/***************************************  Pop iFrame START ************************************** */
+
+#pop_iframe {
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 99%;
+    min-height: 100%;
+    /* background: #fff; */
+    font-size: 1em;
+    z-index: 999;
+    padding-bottom: 30px;
+}
+
+#pop_iframe iframe {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #fff;
+}
+
+#pop_iframe_closer {
+    border-radius: 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.6em;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+@media (max-width:39.9375em) {
+    #pop_iframe_closer {
+        font-size: 1.3em;
+    }
+}
+
+
+/***************************************  Pop iFrame END ************************************** */
+
+
+/***************************************  Popped Layer START ************************************** */
+
+#popped_layer {
+    background-color: #fff;
+    font-size: 1em;
+    padding: 1em 2.5% 10em;
+    text-align: left;
+}
+
+#popped_layer h1 {
+    font-size: 2.6em;
+    margin: 0 0 0.5em;
+    padding: 0;
+    font-weight: bold;
+    text-align: left;
+}
+
+#popped_layer table {
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+}
+
+#popped_layer table th {
+    font-weight: bold;
+}
+
+#popped_layer table th,
+#popped_layer table td {
+    padding: 3px 5px;
+    border-top: 1px solid #333;
+    border-left: 1px solid #333;
+}
+
+@media (max-width:768px) {
+    #popped_layer h1 {
+        font-size: 1.9em;
+    }
+}
+
+@media (max-width:480px) {
+    #popped_layer h1 {
+        font-size: 1.4em;
+    }
+}
+
+#popped_layer h2 {
+    margin: 5px 0 0;
+    font-weight: bold;
+}
+
+#popped_layer h3 {
+    margin: 5px 0 0;
+    font-weight: bold;
+}
+
+#popped_layer p {
+    padding: 0 0 5px;
+    margin: 0;
+}
+
+#popped_layer ul {
+    padding: 0px 0px 0px 15px;
+    list-style: disc outside none;
+    margin: 5px 0px;
+}
+
+#popped_layer ol {
+    list-style: decimal inside none;
+    padding: 0px;
+    margin: 5px 0px;
+}
+
+
+/***************************************  Popped Layer END ************************************** */
+
+
+/***************************************  Progress Bar START ************************************** */
+
+#page_multicoreg #progress_bar,
+#page_logout #progress_bar,
+#page_doi #progress_bar {
+    position: relative;
+    padding: 0;
+    font-size: 1.15em;
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    list-style: none;
+    display: block;
+}
+
+#page_multicoreg #progress_bar li,
+#page_logout #progress_bar li,
+#page_doi #progress_bar li {
+    width: 25%;
+    float: left;
+    display: block;
+    text-align: center;
+    background: url(/_global/wingame/54/images/progress_line_default.png) repeat-x 0 center transparent;
+}
+
+#page_multicoreg #progress_bar.has_3_steps li,
+#page_logout #progress_bar.has_3_steps li,
+#page_doi #progress_bar.has_3_steps li {
+    width: 33.33%;
+}
+
+#page_multicoreg #progress_bar li>span,
+#page_logout #progress_bar li>span,
+#page_doi #progress_bar li>span {
+    padding: 0.75em;
+    background-color: #fff;
+}
+
+#page_multicoreg #progress_bar li>span>span,
+#page_logout #progress_bar li>span>span,
+#page_doi #progress_bar li>span>span {
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    color: #fff;
+    text-align: center;
+    margin: 0.5em 0;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    display: inline-block;
+    background: #11a4cd;
+}
+
+#page_multicoreg #progress_bar li>span>span:before,
+#page_logout #progress_bar li>span>span:before,
+#page_doi #progress_bar li>span>span:before {
+    font-size: 2em;
+}
+
+#page_multicoreg #progress_bar li.first,
+#page_logout #progress_bar li.first,
+#page_doi #progress_bar li.first {
+    text-align: left;
+}
+
+#page_multicoreg #progress_bar li.last,
+#page_logout #progress_bar li.last,
+#page_doi #progress_bar li.last {
+    text-align: right;
+}
+
+#page_multicoreg #progress_bar li.pull>span,
+#page_logout #progress_bar li.pull>span,
+#page_doi #progress_bar li.pull>span {
+    margin-left: -25%;
+}
+
+#page_multicoreg #progress_bar li.push>span,
+#page_logout #progress_bar li.push>span,
+#page_doi #progress_bar li.push>span {
+    margin-left: 25%;
+}
+
+#page_multicoreg #progress_bar li.active.pull>span,
+#page_logout #progress_bar li.active.pull>span,
+#page_doi #progress_bar li.active.pull>span,
+#page_multicoreg #progress_bar li.done.push>span,
+#page_logout #progress_bar li.done.push>span,
+#page_doi #progress_bar li.done.push>span {
+    margin-left: -10%;
+}
+
+#page_multicoreg #progress_bar li.active.push>span,
+#page_logout #progress_bar li.active.push>span,
+#page_doi #progress_bar li.active.push>span {
+    margin-left: 10%;
+}
+
+#page_multicoreg #progress_bar li.active>span>span,
+#page_logout #progress_bar li.active>span>span,
+#page_doi #progress_bar li.active>span>span {
+    width: 4em;
+    height: 4em;
+    line-height: 4em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#page_multicoreg #progress_bar li.active>span>span:before,
+#page_logout #progress_bar li.active>span>span:before,
+#page_doi #progress_bar li.active>span>span:before {
+    font-size: 2.6rem;
+}
+
+#page_multicoreg #progress_bar li.done>span>span,
+#page_logout #progress_bar li.done>span>span,
+#page_doi #progress_bar li.done>span>span {
+    background: #3af159;
+}
+
+#page_multicoreg #progress_bar .icon,
+#page_logout #progress_bar .icon,
+#page_doi #progress_bar .icon {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    line-height: 1.7;
+    font-size: 30px;
+    font-size: 2rem;
+    background: none;
+}
+
+#page_multicoreg #progress_bar li.active .icon,
+#page_logout #progress_bar li.active .icon,
+#page_doi #progress_bar li.active .icon {
+    font-size: 45px;
+    font-size: 2.7rem;
+}
+
+@media (max-width:768px) {
+    #page_multicoreg #progress_bar,
+    #page_logout #progress_bar,
+    #page_doi #progress_bar {
+        font-size: 1em;
+    }
+}
+
+@media (max-width:480px) {
+    #page_multicoreg #progress_bar,
+    #page_logout #progress_bar,
+    #page_doi #progress_bar {
+        font-size: 0.8em;
+    }
+    #page_multicoreg #progress_bar li>span,
+    #page_logout #progress_bar li>span,
+    #page_doi #progress_bar li>span {
+        padding: 0.5em;
+        background-color: #fff;
+    }
+    #page_multicoreg #progress_bar .icon,
+    #page_logout #progress_bar .icon,
+    #page_doi #progress_bar .icon {
+        font-size: 1.5rem;
+    }
+    #page_multicoreg #progress_bar li.active .icon,
+    #page_logout #progress_bar li.active .icon,
+    #page_doi #progress_bar li.active .icon {
+        font-size: 2rem;
+    }
+}
+
+
+/***************************************  Progress Bar END ************************************** */
+
+
+/***************************************  Advertise START ************************************** */
+
+
+/* wenn noch benötigt drin lassen */
+
+#advertise_layer {
+    position: fixed;
+    width: 276px;
+    bottom: 10%;
+    left: 50%;
+    margin: 0px 0px 0px -150px;
+    padding: 5px 10px 10px;
+    background-color: #FFF;
+    border: 2px solid #c00;
+    overflow: hidden;
+    z-index: 998;
+    box-shadow: 2px 5px 20px 0px #141414;
+    text-align: left;
+}
+
+#advertise_layer .close {
+    text-align: right;
+}
+
+#advertise_layer h3 {
+    font-size: 14px;
+    margin: 0;
+}
+
+#advertise_layer a {
+    color: #c00;
+}
+
+#advertise_layer p {
+    font-size: 12px;
+    margin: 10px 0;
+    color: #000;
+}
+
+
+/***************************************  Advertise END ************************************** */
+
+
+/************************************** helper class START ************************************* */
+
+.hidden {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden;
+}
+.radius {
+    border-radius: 0.4rem;
+}
+
+
+/************************************** helper class END ************************************* */
+
+
+/************************************** exit link - popunder START ************************************* */
+
+#exit_link {
+    display: none;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    height: 31px;
+    z-index: 666;
+    text-decoration: none;
+    color: #047AD7;
+    background-color: #fff;
+    transition: none 0s ease 0s;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    padding: 3px 12px;
+}
+
+#exit_link span {
+    display: block;
+    float: left;
+}
+
+#exit_link .center {
+    padding: 6px 0 0 0;
+}
+
+#exit_link .right {
+    width: 28px;
+    height: 28px;
+}
+
+#exit_link .right:before,
+#exit_link .right:after {
+    position: absolute;
+    content: ' ';
+    height: 15px;
+    width: 2px;
+    top: 10px;
+    right: 20px;
+    background-color: #047AD7;
+}
+
+#exit_link .right:before {
+    transform: rotate(45deg);
+}
+
+#exit_link .right:after {
+    transform: rotate(-45deg);
+}
+
+#exit_link_fader {
+    position: absolute;
+    z-index: 2100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+
+/************************************** exit link - popunder END ************************************* */
+
+
+/**************************************  no thanks, close this offer START ************************************* */
+
+#no_thanks {
+    display: none;
+    font: normal normal normal 18px/1.2 arial, verdana, helvetica, sans serif;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
+    width: 300px;
+    height: 35px;
+    background: transparent url(/_global/images/no_thanks.png) left top no-repeat;
+    z-index: 2000;
+    text-decoration: none;
+    color: #000;
+}
+
+#no_thanks:hover {
+    background-position: right top;
+    text-decoration: none;
+    color: #000;
+}
+
+#no_thanks.show_no_thanks {
+    display: block;
+}
+
+#no_thanks span.no_thanks_text {
+    display: block;
+    text-align: center;
+    width: 270px;
+    margin: 0;
+    padding: 6px 0 0 0;
+}
+
+#no_thanks_fader {
+    position: absolute;
+    z-index: 2100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+
+/**************************************  no thanks, close this offer END ************************************* */

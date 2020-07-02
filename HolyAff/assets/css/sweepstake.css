@@ -1,0 +1,100 @@
+/* Optin layer START */
+#optin_layer {
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:9;
+	width:100%;
+	height:100%;
+	padding:0 2.5%;
+	font-size:1em;
+	text-align:left;
+}
+
+#optin_layer .transparent_background {
+	background:#fff;
+	opacity:0.9;
+	filter:alpha(opacity=90);
+	width:100%;
+	height:9999px;
+	position:absolute;
+	z-index:1;
+	top:0;
+	left:0;
+}
+
+#optin_layer .inner {
+	max-width:480px;
+	top:25%;
+	position:relative;
+	z-index:2;
+	margin:auto;
+}
+
+#optin_layer .inner p {
+	color:#333;
+	margin:1em 0 0;
+	text-align:center;
+}
+
+#optin_layer p.below {
+	font-size:0.75em;
+}
+
+#optin_layer p.below #optin_skip_button {
+	-webkit-border-radius:6px 6px 6px 6px;
+	border-radius:6px 6px 6px 6px;
+	background-color:#11a4cd;
+	padding:0.1em 0.3em;
+	color:#fff;
+	cursor:pointer;
+}
+
+#optin_layer .inner .layer {
+	background:#e8e8e8;
+	border:1px solid #666;
+	border-top-width:1em;
+	-webkit-border-radius:6px 6px 6px 6px;
+	border-radius:6px 6px 6px 6px;
+	padding:1em;
+}
+
+#optin_layer .inner .layer p {
+	margin:0 0 1em;
+	text-align:left;
+}
+
+#optin_layer #optin_confirm_button {
+	display:inline-block;
+	float:right;
+	-webkit-border-radius:6px 6px 6px 6px;
+	border-radius:6px 6px 6px 6px;
+	background-color:#11a4cd;
+	text-align:center;
+	padding:0.55em 1.5em;
+	color:#fff;
+	font-size:1.2em;
+	font-weight:bold;
+	text-transform:uppercase;
+	cursor:pointer;
+}
+
+#optin_layer #optin_confirm_button input {
+	margin-right:0.25em;
+	min-width:initial;
+	min-height:initial;
+}
+
+@media (max-width:480px) {
+	#optin_layer .inner {
+		top:5%;
+	}
+}
+/* Optin layer END */
+.formrow_tel_areacode{
+	font-size: 1.5rem;
+	margin-top: 0.5rem;
+}
+select#city ~ #label_city {
+	display: none;
+}
